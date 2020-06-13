@@ -3,7 +3,6 @@ window.word_count = {}  //window, because from popup.js we are accessing backgro
 
 chrome.runtime.onMessage.addListener(function(request,sender,sendMessage){
     window.word_count[request.url] = request.count     //add key:value url:count to track which site had what count
-
 })
 
 //we want a new window to open, with the above data inside
