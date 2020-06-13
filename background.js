@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener(function(request,sender,sendMessage){
 
 })
 
-//we want a new window to open, with the above data inside
-chrome.browserAction.onClicked.addListener(function(tab){  //add listener will call callback with the tab which was clicked
-    chrome.tabs.create({url: "popup.html"})  //to open new tabs, need permissions set in manifest
-})
+// //we want a new window to open, with the above data inside
+// chrome.browserAction.onClicked.addListener(function(tab){  //add listener will call callback with the tab which was clicked
+//     chrome.tabs.create({url: "popup.html"})  //to open new tabs, need permissions set in manifest
+// })
